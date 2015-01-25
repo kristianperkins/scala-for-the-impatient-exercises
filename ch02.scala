@@ -40,7 +40,7 @@ println(total)
 
 // 7
 
-var total = 1
+total = 1
 "Hello".foreach { total *= _ }
 println(total)
 
