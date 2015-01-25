@@ -1,1 +1,1 @@
-# scala-for-the-impatient-excercises
+# scala-for-the-impatient-exercises
