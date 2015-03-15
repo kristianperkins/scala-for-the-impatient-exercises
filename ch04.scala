@@ -40,3 +40,21 @@ val props: collection.Map[String, String] = System.getProperties()
 val size = (for (k <- props.keySet) yield k.size).max + 1
 for ((k, v) <- props) println(s"%-${size}s| %s".format(k, v))
 
+// 8
+
+def minmax(values: Array[Int]) = {
+  (values.min, values.max)
+}
+println(minmax(Array(1, 2, 3, 4, 5, 6, 7, 8)))
+
+// 9
+
+def lteqgt(values: Array[Int], v: Int) = {
+  (
+    for (lt <- values if lt < 4) yield lt,
+    for (eq <- values if eq == 4) yield eq,
+    for (gt <- values if gt > 4) yield gt
+  )
+}
+println(lteqgt(Array(1, 2, 3, 4, 5, 6, 7, 8), 5))
+
