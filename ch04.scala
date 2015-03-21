@@ -58,3 +58,6 @@ def lteqgt(values: Array[Int], v: Int) = {
 }
 println(lteqgt(Array(1, 2, 3, 4, 5, 6, 7, 8), 5))
 
+// 10
+
+println(('A' to 'Z').mkString("").zip(('a' to 'z').mkString("")))
